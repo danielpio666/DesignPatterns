@@ -2,8 +2,6 @@
 
 namespace SON\Form\Elements;
 
-use SON\Form\Contracts\ElementInterface;
-
 class Input extends ElementAbstract {
 
     public function render()

@@ -2,7 +2,6 @@
 
 namespace SON\Form\Elements;
 
-
 use SON\Form\Contracts\ElementInterface;
 
 class ElementAbstract implements ElementInterface {

@@ -21,7 +21,7 @@
             SON\Form\Elements\Label,
             SON\Form\Elements\Textarea;
 
-        //Instância 1 - Contato
+        //Instância 1 - Contato ---------------------------------------------------------------------------------------------------------------------------->
 
         echo "<h3>1 - Contato</h3>";
 
@@ -31,17 +31,15 @@
 
         $LabelNome_1 = new Label(['for'=>'nome']);
         $LabelNome_1->setTexto('Nome Completo');
-        $InputName_1 = new Input(['type'=>'text','name'=>'nome','size'=>'50','placeholder'=>'Digite seu nome...',
-            'class'=>'form-control']);
+        $InputName_1 = new Input(['type'=>'text','name'=>'nome','size'=>'50','placeholder'=>'Digite seu nome...', 'class'=>'form-control']);
+
         $LabelEmail_1 = new Label(['for'=>'email']);
         $LabelEmail_1->setTexto('E-Mail');
-        $InputEmail_1 = new Input(['type'=>'text','name'=>'email','size'=>'50','placeholder'=>'Digite seu email...',
-            'class'=>'form-control']);
+        $InputEmail_1 = new Input(['type'=>'text','name'=>'email','size'=>'50','placeholder'=>'Digite seu email...', 'class'=>'form-control']);
 
         $LabelMens_1 = new Label(['for'=>'menssage']);
         $LabelMens_1->setTexto('Mensagem');
-        $InputMens_1 = new Textarea(['name'=>'menssage','rows'=>'10','placeholder'=>'Digite sua mensagem...',
-            'class'=>'form-control']);
+        $InputMens_1 = new Textarea(['name'=>'menssage','rows'=>'10','placeholder'=>'Digite sua mensagem...', 'class'=>'form-control']);
 
         $InputSubmit_1 = new Input(['type'=>'submit','value'=>'Enviar','class'=>'btn btn-primary']);
         $InputLimpar_1 = new Input(['type'=>'reset','value'=>'Limpar','class'=>'btn btn-default']);
@@ -56,7 +54,9 @@
 
         $form_1->render();
 
-        //Instância 2 - Clientes
+        // Fim da Instância 1 ---------------------------------------------------------------------------------------------------------------------------->
+
+        //Instância 2 - Clientes ------------------------------------------------------------------------------------------------------------------------->
 
         echo "<h3>2 - Clientes</h3>";
 
@@ -66,26 +66,23 @@
 
         $LabelNome_2 = new Label(['for'=>'nome']);
         $LabelNome_2->setTexto('Nome Completo');
-        $InputName_2 = new Input(['type'=>'text','name'=>'nome','size'=>'50','placeholder'=>'Digite seu nome...',
-            'class'=>'form-control']);
+        $InputName_2 = new Input(['type'=>'text','name'=>'nome','size'=>'50','placeholder'=>'Digite seu nome...', 'class'=>'form-control']);
+
         $LabelEmail_2 = new Label(['for'=>'email']);
         $LabelEmail_2->setTexto('E-Mail');
-        $InputEmail_2 = new Input(['type'=>'text','name'=>'email','size'=>'50','placeholder'=>'Digite seu email...',
-            'class'=>'form-control']);
+        $InputEmail_2 = new Input(['type'=>'text','name'=>'email','size'=>'50','placeholder'=>'Digite seu email...', 'class'=>'form-control']);
+
         $LabelEnd_2 = new Label(['for'=>'endereco']);
         $LabelEnd_2->setTexto('Endereço');
-        $InputEnd_2 = new Input(['type'=>'text','name'=>'endereco','size'=>'50','placeholder'=>'Digite seu endereço...',
-            'class'=>'form-control']);
+        $InputEnd_2 = new Input(['type'=>'text','name'=>'endereco','size'=>'50','placeholder'=>'Digite seu endereço...', 'class'=>'form-control']);
 
         $Labelrg_2 = new Label(['for'=>'rg']);
         $Labelrg_2->setTexto('RG');
-        $Inputrg_2 = new Input(['type'=>'text','name'=>'rg','size'=>'20','placeholder'=>'Digite seu RG...',
-            'class'=>'form-control']);
+        $Inputrg_2 = new Input(['type'=>'text','name'=>'rg','size'=>'20','placeholder'=>'Digite seu RG...', 'class'=>'form-control']);
 
         $Labelidade_2 = new Label(['for'=>'idade']);
         $Labelidade_2->setTexto('Idade');
-        $Inputidade_2 = new Input(['type'=>'number','name'=>'idade','size'=>'3','class'=>'form-control',
-                                   'max'=>'150', 'min'=>'0']);
+        $Inputidade_2 = new Input(['type'=>'number','name'=>'idade','size'=>'3','class'=>'form-control', 'max'=>'150', 'min'=>'0']);
 
         $InputSubmit_2 = new Input(['type'=>'submit','value'=>'Enviar','class'=>'btn btn-primary']);
         $InputLimpar_2 = new Input(['type'=>'reset','value'=>'Limpar','class'=>'btn btn-default']);
@@ -104,7 +101,9 @@
 
         $form_2->render();
 
-        //Instância 3 - Produtos
+        // Fim da Instância 2 ---------------------------------------------------------------------------------------------------------------------------->
+
+        //Instância 3 - Produtos ------------------------------------------------------------------------------------------------------------------------->
 
         echo "<h3>3 - Produtos</h3>";
 
@@ -114,23 +113,19 @@
 
         $LabelNome_3 = new Label(['for'=>'nome']);
         $LabelNome_3->setTexto('Nome do Produto');
-        $InputName_3 = new Input(['type'=>'text','name'=>'nome','size'=>'50','placeholder'=>'Digite o nome do Produto...',
-            'class'=>'form-control']);
+        $InputName_3 = new Input(['type'=>'text','name'=>'nome','size'=>'50','placeholder'=>'Digite o nome do Produto...', 'class'=>'form-control']);
 
         $LabelMarca_3 = new Label(['for'=>'marca']);
         $LabelMarca_3->setTexto('Marca');
-        $InputMarca_3 = new Input(['type'=>'text','name'=>'marca','size'=>'50','placeholder'=>'Digite a marca...',
-            'class'=>'form-control']);
+        $InputMarca_3 = new Input(['type'=>'text','name'=>'marca','size'=>'50','placeholder'=>'Digite a marca...', 'class'=>'form-control']);
 
         $LabelValidade_3 = new Label(['for'=>'validade']);
         $LabelValidade_3->setTexto('Validade');
-        $InputValidade_3 = new Input(['type'=>'date','name'=>'validade','placeholder'=>'Validade',
-            'class'=>'form-control']);
+        $InputValidade_3 = new Input(['type'=>'date','name'=>'validade','placeholder'=>'Validade', 'class'=>'form-control']);
 
         $LabelEstoque_3 = new Label(['for'=>'estoque']);
         $LabelEstoque_3->setTexto('Estoque');
-        $InputEstoque_3 = new Input(['type'=>'number','name'=>'estoque','placeholder'=>'Estoque..', 'max'=>'100000',
-            'class'=>'form-control']);
+        $InputEstoque_3 = new Input(['type'=>'number','name'=>'estoque','placeholder'=>'Estoque..', 'max'=>'100000', 'class'=>'form-control']);
 
         $InputSubmit_3 = new Input(['type'=>'submit','value'=>'Enviar','class'=>'btn btn-primary']);
         $InputLimpar_3 = new Input(['type'=>'reset','value'=>'Limpar','class'=>'btn btn-default']);
@@ -147,7 +142,9 @@
 
         $form_3->render();
 
-        //Instância 4 - Carros
+        // Fim da Instância 3 ---------------------------------------------------------------------------------------------------------------------------->
+
+        //Instância 4 - Carros --------------------------------------------------------------------------------------------------------------------------->
 
         echo "<h3>4 - Carros</h3>";
 
@@ -157,18 +154,15 @@
 
         $LabelMarca_4 = new Label(['for'=>'marca']);
         $LabelMarca_4->setTexto('Marca');
-        $InputMarca_4 = new Input(['type'=>'text','name'=>'marca','size'=>'50','placeholder'=>'Digite a marca...',
-            'class'=>'form-control']);
+        $InputMarca_4 = new Input(['type'=>'text','name'=>'marca','size'=>'50','placeholder'=>'Digite a marca...', 'class'=>'form-control']);
 
         $LabelModelo_4 = new Label(['for'=>'modelo']);
         $LabelModelo_4->setTexto('Modelo');
-        $InputModelo_4 = new Input(['type'=>'text','name'=>'modelo','size'=>'50','placeholder'=>'Digite o modelo...',
-            'class'=>'form-control']);
+        $InputModelo_4 = new Input(['type'=>'text','name'=>'modelo','size'=>'50','placeholder'=>'Digite o modelo...', 'class'=>'form-control']);
 
         $LabelAno_4 = new Label(['for'=>'ano']);
         $LabelAno_4->setTexto('Ano');
-        $InputAno_4 = new Input(['type'=>'number','name'=>'ano','placeholder'=>'Ano','min'=>'1900', 'max'=>'2020',
-            'class'=>'form-control']);
+        $InputAno_4 = new Input(['type'=>'number','name'=>'ano','placeholder'=>'Ano','min'=>'1900', 'max'=>'2020', 'class'=>'form-control']);
 
         $LabelOpc_1_4 = new Label(['for'=>'opc_1']);
         $LabelOpc_1_4->setTexto('Banco de Couro');
@@ -213,6 +207,7 @@
 
         $form_4->render();
 
+        // Fim da Instância 4 ---------------------------------------------------------------------------------------------------------------------------->
 
         ?>
         </div>

@@ -4,7 +4,6 @@ namespace SON\Form;
 
 use SON\Form\Contracts\ElementInterface;
 use SON\Form\Contracts\FormInterface;
-use SON\Form\Contracts\LabelInterface;
 use SON\Form\Contracts\ValidatorInterface;
 
 class Form implements FormInterface {
@@ -14,16 +13,32 @@ class Form implements FormInterface {
     private $fields;
     private $validator;
 
-    public function __construct(ValidatorInterface $validator) {
+    public function __construct(ValidatorInterface $validator)
+    {
         $this->method = 'post';
         $this->validator = $validator;
     }
 
-    public function setMethod($method)    {        $this->method = $method;        return $this;    }
-    public function setAction($action)    {        $this->action = $action;        return $this;    }
+    public function setMethod($method)
+    {
+        $this->method = $method;
+        return $this;
+    }
+    public function setAction($action)
+    {
+        $this->action = $action;
+        return $this;
+    }
 
-    public function getMethod()           {        return $this->method;        }
-    public function getAction()           {        return $this->action;        }
+    public function getMethod()
+    {
+        return $this->method;
+    }
+
+    public function getAction()
+    {
+        return $this->action;
+    }
 
     public function addField(ElementInterface $field) {
         $this->fields[] = $field;
@@ -52,6 +67,4 @@ class Form implements FormInterface {
 
         echo "</form>";
     }
-
-
 }

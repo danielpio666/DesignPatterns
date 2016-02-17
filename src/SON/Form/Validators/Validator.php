@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: DanielPio
- * Date: 16/02/2016
- * Time: 10:46
- */
 
 namespace SON\Form\Validators;
-
 
 use SON\Form\Contracts\RequestInterface;
 use SON\Form\Contracts\ValidatorInterface;
